@@ -21,12 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html>
+    <html lang="zh">
       <body className={pingFang.variable}>
         <NextUIProvider>
           {children}
         </NextUIProvider>
       </body>
-    </html>
+    </html >
   );
 }

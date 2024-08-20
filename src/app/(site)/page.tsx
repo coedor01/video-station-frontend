@@ -2,8 +2,8 @@ import { Button } from "@nextui-org/react";
 
 export default function Home() {
   return (
-    <Button color="primary">
-      Hello Next-UI!
-    </Button>
+    <div className="hidden lg:block lg:pl-80 h-full">
+      Hello world!
+    </div>
   );
 }
