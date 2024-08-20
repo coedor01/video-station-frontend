@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import LocalFont from "next/font/local";
 import { NextUIProvider } from "@nextui-org/react";
 import "./globals.css";
 
+const pingFang = LocalFont(
+  {
+    src: "./fonts/PingFang Regular.ttf",
+    variable: "--pingfang-regular",
+  }
+);
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html>
-      <body>
+      <body className={pingFang.variable}>
         <NextUIProvider>
           {children}
         </NextUIProvider>
